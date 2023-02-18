@@ -1,0 +1,966 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+body {
+  background-color: #1B1E35;
+}
+
+nav {
+  display: flex;
+  padding: 0 12px;
+  justify-content: space-between;
+  width: 84%;
+  height: 70px;
+  margin: 0 70px;
+  background-color: #384064;
+  color: white;
+  border-radius: 6px;
+}
+nav .menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+nav .menu .icon {
+  padding-top: 20px;
+  text-align: center;
+  width: 120px;
+  height: 70px;
+  transition: 0.3s;
+}
+nav .menu .icon:hover {
+  transform: scale(0.9);
+  background-color: #50597B;
+}
+nav .menu a {
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+nav .menu a:hover {
+  color: #11A8AB;
+  transform: scale(1);
+}
+nav .menu i {
+  color: rgb(139, 134, 134);
+  font-size: 22px;
+}
+nav .me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav .me select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+nav .me img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+.container .menuBlock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.container .menuBlock .card {
+  margin: 15px 15px 15px 0;
+  width: 100%;
+  height: 400px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .menuBlock .card .box {
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #11A8AB;
+  border-radius: 6px 6px 0 0;
+  transition: 0.3s;
+}
+.container .menuBlock .card .links {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.container .menuBlock .card .links .link {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 15px 22px;
+  transition: 0.3s;
+}
+.container .menuBlock .card .links .link:hover {
+  background-color: #50597B;
+  transform: scale(1.1);
+}
+.container .menuBlock .card .links .link a {
+  color: white;
+  font-weight: 600;
+  font-size: 19px;
+}
+.container .menuBlock .card .links .link a i {
+  font-size: 23px;
+  padding-right: 20px;
+  color: rgb(139, 134, 134);
+}
+.container .menuBlock .card .links .link .div {
+  width: 45px;
+  text-align: center;
+  padding-top: 3px;
+  height: 22px;
+  background-color: #5a6488;
+  border-radius: 10px;
+}
+.container .menuBlock .card .links .link .div h3 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.container .menuBlock .card-1 {
+  margin: 5px 5px 5px 0;
+  width: 100%;
+  height: 480px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.container .menuBlock .card-1 h1 {
+  margin-top: 70px;
+  font-size: 29px;
+  text-align: center;
+}
+.container .menuBlock .card-1 img {
+  width: 350px;
+}
+.container .menuBlock .card-1 .procent {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.container .menuBlock .card-1 .phones {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  border-top: 2px solid #E64C65;
+  border-right: 2px solid black;
+  width: 25%;
+  align-items: center;
+  height: 70px;
+  transition: 0.3s;
+}
+.container .menuBlock .card-1 .phones:hover {
+  background-color: #50597B;
+  scale: 1.1;
+}
+.container .menuBlock .card-1 .phones p {
+  color: rgb(119, 119, 119);
+}
+.container .menuBlock .card-1 .phones:nth-child(2) {
+  border-top: 2px solid #11A8AB;
+}
+.container .menuBlock .card-1 .phones:nth-child(3) {
+  border-top: 2px solid #FCB150;
+}
+.container .menuBlock .card-1 .phones:nth-child(4) {
+  border-top: 2px solid #4FC4F6;
+  border-right: none;
+}
+.container .menuBlock .card-2 {
+  margin: 5px 5px 5px 0;
+  width: 100%;
+  height: 480px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.container .menuBlock .card-2 img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+.container .menuBlock .card-2 .btn-group {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container .menuBlock .card-2 .btn-group button {
+  width: 80px;
+  height: 40px;
+  background-color: #50597B;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+}
+.container .menuBlock .card-2 .btn-group button:hover {
+  background-color: #E64C65;
+  transform: scale(1.1);
+}
+.container .menuBlock .card-2 .summer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: justify;
+  flex-direction: column;
+}
+.container .menuBlock .card-2 .summer div {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  text-align: justify;
+}
+.container .menuBlock .card-2 .summer div:hover {
+  background-color: #50597B;
+}
+.container .menuBlock .card-2 .summer div .a2021 {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.container .menuBlock .card-2 .summer div .a2021 p {
+  color: rgb(139, 134, 134);
+}
+.container .menuBlock .card-2 .summer div h4 span {
+  color: #E64C65;
+}
+.container .menuBlock .card-3 {
+  margin: 5px 5px 5px 0;
+  width: 100%;
+  height: 280px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.container .menuBlock .card-3 .video {
+  width: 100%;
+  height: 80%;
+  background-color: #787878;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .menuBlock .card-3 .video i {
+  font-size: 45px;
+}
+.container .menuBlock .card-3 .video i:hover {
+  color: #E64C65;
+}
+.container .menuBlock .card-3 .play {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .menuBlock .card-3 .play i {
+  color: black;
+  font-size: 24px;
+}
+.container .menuBlock .card-3 .play .min {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+.container .menuBlock .card-3 .play .min span {
+  color: black;
+}
+.container .menuBlock .card-4 {
+  margin: 5px 5px 5px 0;
+  width: 100%;
+  height: 150px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  color: white;
+  align-items: center;
+}
+.container .menuBlock .card-4 .sites {
+  width: 25%;
+  height: 100%;
+  background-color: #0a3764;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.container .menuBlock .card-4 .sites i {
+  font-size: 30px;
+}
+.container .menuBlock .card-4 .sites:nth-child(2) {
+  background-color: #4FB6C6;
+}
+.container .menuBlock .card-4 .sites:nth-child(3) {
+  background-color: #E54752;
+}
+.container .menuBlock .card-4 .sites:nth-child(4) {
+  background-color: #505363;
+}
+.container .accountBlock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.container .accountBlock .card {
+  margin: 15px 15px 15px 0px;
+  width: 100%;
+  height: 460px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .accountBlock .card .bi-plus-circle {
+  font-size: 25px;
+  color: rgb(139, 134, 134);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transform: translateX(160px);
+}
+.container .accountBlock .card img {
+  border-radius: 50%;
+  border: 4px solid rgb(139, 134, 134);
+  margin-bottom: 20px;
+}
+.container .accountBlock .card h1 {
+  font-size: 25px;
+}
+.container .accountBlock .card .p {
+  color: rgb(139, 134, 134);
+  margin-bottom: 60px;
+  width: 70%;
+  text-align: center;
+}
+.container .accountBlock .card .likes {
+  display: flex;
+  width: 100%;
+}
+.container .accountBlock .card .likes .comment {
+  width: 33%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-top: 2px solid #FCB150;
+  font-size: 22px;
+}
+.container .accountBlock .card .likes .comment:hover {
+  cursor: pointer;
+  background-color: #50597B;
+  transform: scale(1.1);
+  border-radius: 0 0 5px 5px;
+}
+.container .accountBlock .card .likes .comment:nth-child(2) {
+  border-top: 2px solid #11A8AB;
+  border-left: 1px solid black;
+}
+.container .accountBlock .card .likes .comment:nth-child(3) {
+  border-top: 2px solid #E54752;
+  border-left: 1px solid black;
+}
+.container .accountBlock .card .likes .comment i {
+  font-size: 28px;
+  padding-left: 7px;
+}
+.container .accountBlock .card-1 {
+  margin: 5px 5px 5px 0px;
+  width: 100%;
+  height: 620px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .accountBlock .card-1 .tashkent {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+  padding-top: 10px;
+  height: 60px;
+  background-color: #CB2F3D;
+}
+.container .accountBlock .card-1 .weather {
+  width: 100%;
+  height: 160px;
+  background-color: #DE454F;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px;
+}
+.container .accountBlock .card-1 .weather h3 {
+  padding-left: 50px;
+  font-size: 25px;
+}
+.container .accountBlock .card-1 .weather .gradus {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .accountBlock .card-1 .weather .gradus h1 {
+  font-size: 60px;
+}
+.container .accountBlock .card-1 .weather .gradus i {
+  font-size: 90px;
+  padding-bottom: 15px;
+}
+.container .accountBlock .card-1 .hafta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 0 40px;
+}
+.container .accountBlock .card-1 .hafta .day {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+.container .accountBlock .card-1 .hafta .day:hover {
+  color: #11A8AB;
+}
+.container .accountBlock .card-1 .hafta .day p {
+  font-weight: 600;
+}
+.container .accountBlock .card-1 .hafta .day span {
+  color: rgb(139, 134, 134);
+}
+.container .accountBlock .card-1 .hafta .day h4 {
+  font-weight: 100;
+}
+.container .accountBlock .card-1 .hafta .day div {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.container .accountBlock .card-2 {
+  margin: 5px 5px 5px 0px;
+  width: 100%;
+  height: 400px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .accountBlock .card-2 .twit {
+  display: flex;
+  width: 100%;
+  background-color: #4FC4F6;
+  height: 65px;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.container .accountBlock .card-2 .twit i {
+  font-size: 30px;
+}
+.container .accountBlock .card-2 .twit h1 {
+  font-size: 30px;
+}
+.container .accountBlock .card-2 .text {
+  width: 99.2%;
+  height: 200px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #000;
+}
+.container .accountBlock .card-2 .text:nth-child(3) {
+  border-bottom: none;
+}
+.container .accountBlock .card-2 .text p {
+  width: 80%;
+}
+.container .accountBlock .card-2 .text span {
+  color: rgb(139, 134, 134);
+}
+.container .accountBlock .card-2 .text a {
+  color: #4FC4F6;
+}
+.container .accountBlock .card-3 {
+  margin: 5px 5px 5px 0px;
+  width: 100%;
+  height: auto;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 12px;
+  padding: 15px 0;
+}
+.container .accountBlock .card-3 .facebook {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .accountBlock .card-3 .facebook:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container .accountBlock .card-3 .facebook .class {
+  width: 20%;
+  background-color: #1A4978;
+  height: 90px;
+  padding-top: 20px;
+}
+.container .accountBlock .card-3 .facebook .div {
+  width: 80%;
+  background-color: #294C6F;
+  height: 90px;
+  padding-top: 30px;
+}
+.container .accountBlock .card-3 .twit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .accountBlock .card-3 .twit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container .accountBlock .card-3 .twit .class {
+  width: 20%;
+  background-color: #CB2F3D;
+  height: 90px;
+  padding-top: 20px;
+}
+.container .accountBlock .card-3 .twit .class i {
+  font-size: 30px;
+}
+.container .accountBlock .card-3 .twit .div {
+  width: 80%;
+  background-color: #E54752;
+  height: 90px;
+  padding-top: 30px;
+}
+.container .accountBlock .card-3 .google {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .accountBlock .card-3 .google:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container .accountBlock .card-3 .google .class {
+  width: 20%;
+  background-color: #359EB2;
+  height: 90px;
+  padding-top: 20px;
+}
+.container .accountBlock .card-3 .google .class i {
+  font-size: 30px;
+}
+.container .accountBlock .card-3 .google .div {
+  width: 80%;
+  background-color: #4FB6C6;
+  height: 90px;
+  padding-top: 30px;
+}
+.container .inputBlock {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.container .inputBlock .card {
+  margin: 15px 15px 15px 0;
+  width: 100%;
+  height: 300px;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .inputBlock .card h1 {
+  margin: 30px 0;
+  font-size: 25px;
+}
+.container .inputBlock .card input {
+  margin: 20px 0;
+  background-color: #50597B;
+  width: 90%;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+.container .inputBlock .card input:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px #08126e;
+  border: none;
+}
+.container .inputBlock .card input:focus {
+  cursor: pointer;
+  box-shadow: 0 0 8px #08126e;
+  border: none;
+}
+.container .inputBlock .card button {
+  width: 70%;
+  height: 50px;
+  background-color: #11A8AB;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.container .inputBlock .card button:hover {
+  cursor: pointer;
+  background-color: rgba(53, 157, 178, 0.3137254902);
+}
+.container .inputBlock .card-1 {
+  margin: 5px 5px 5px 0;
+  width: 100%;
+  height: auto;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .inputBlock .card-1 h1 {
+  margin: 20px 0;
+  font-size: 25px;
+}
+.container .inputBlock .card-1 input {
+  margin: 20px 0;
+  background-color: #50597B;
+  width: 90%;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+.container .inputBlock .card-1 input:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px #08126e;
+  border: none;
+}
+.container .inputBlock .card-1 input:focus {
+  cursor: pointer;
+  box-shadow: 0 0 8px #08126e;
+  border: none;
+}
+.container .inputBlock .card-1 button {
+  width: 70%;
+  height: 50px;
+  background-color: #CB2F3D;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.container .inputBlock .card-1 button:hover {
+  cursor: pointer;
+  background-color: rgba(229, 71, 82, 0.3882352941);
+}
+.container .inputBlock .card-1 a {
+  font-size: 20px;
+  color: rgb(139, 134, 134);
+  margin: 10px 0;
+}
+.container .inputBlock .card-1 .footer {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 0 0 6px 6px;
+  gap: 20px;
+  background-color: #3468AF;
+  justify-content: center;
+}
+.container .inputBlock .card-1 .footer:hover {
+  cursor: pointer;
+  background-color: rgba(17, 55, 107, 0.4431372549);
+}
+.container .inputBlock .card-2 {
+  margin: 10px 10px 10px 0;
+  width: 100%;
+  height: auto;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .inputBlock .card-2 .download {
+  width: 99%;
+  border-bottom: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .inputBlock .card-2 .download:nth-child(2) {
+  border-bottom: none;
+}
+.container .inputBlock .card-2 .load {
+  display: flex;
+  width: 80%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 30px 0;
+  background-color: #50597B;
+}
+.container .inputBlock .card-2 .load .div1 {
+  width: 80%;
+  background-color: #11A8AB;
+  border-radius: 5px 0 0px 5px;
+}
+.container .inputBlock .card-2 .load .div3 {
+  width: 40%;
+  background-color: #11A8AB;
+  border-radius: 5px 0 0 5px;
+}
+.container .inputBlock .card-2 .text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.container .inputBlock .card-2 .text i {
+  font-size: 28px;
+  padding-right: 16px;
+  color: rgb(139, 134, 134);
+}
+.container .inputBlock .card-2 .text h3 {
+  margin-right: 50px;
+}
+.container .inputBlock .card-3 {
+  margin: 10px 10px 10px 0;
+  width: 100%;
+  height: auto;
+  background-color: #1A4E95;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .inputBlock .card-3 .monday {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container .inputBlock .card-3 .monday h3 {
+  width: 60%;
+  padding-top: 30px;
+  height: 80px;
+}
+.container .inputBlock .card-3 .monday .left {
+  padding-top: 25px;
+  width: 20%;
+  height: 80px;
+  text-align: center;
+}
+.container .inputBlock .card-3 .monday .left:hover {
+  background-color: rgba(3, 5, 8, 0.4941176471);
+}
+.container .inputBlock .card-3 .monday .right {
+  padding-top: 25px;
+  width: 20%;
+  height: 80px;
+}
+.container .inputBlock .card-3 .monday .right:hover {
+  background-color: rgba(3, 5, 8, 0.4941176471);
+}
+.container .inputBlock .card-3 .monday i {
+  font-size: 28px;
+}
+.container .inputBlock .card-3 h1 {
+  text-align: center;
+  font-size: 150px;
+  margin: 30px 0;
+}
+.container .inputBlock .card-3 button {
+  width: 70%;
+  height: 50px;
+  background-color: #4FC4F6;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.container .inputBlock .card-3 button:hover {
+  cursor: pointer;
+  background-color: rgba(79, 196, 246, 0.3960784314);
+}
+.container .inputBlock .card-4 {
+  margin: 10px 10px 10px 0;
+  width: 100%;
+  height: auto;
+  background-color: #384064;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.container .inputBlock .card-4 .monday {
+  width: 100%;
+  height: 80px;
+  background-color: #1A4E95;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px 6px 0 0;
+}
+.container .inputBlock .card-4 .monday h3 {
+  width: 60%;
+  padding-top: 30px;
+  height: 80px;
+}
+.container .inputBlock .card-4 .monday .left {
+  padding-top: 25px;
+  width: 20%;
+  height: 80px;
+  text-align: center;
+}
+.container .inputBlock .card-4 .monday .left:hover {
+  background-color: rgba(3, 5, 8, 0.4941176471);
+}
+.container .inputBlock .card-4 .monday .right {
+  padding-top: 25px;
+  width: 20%;
+  height: 80px;
+}
+.container .inputBlock .card-4 .monday .right:hover {
+  background-color: rgba(3, 5, 8, 0.4941176471);
+}
+.container .inputBlock .card-4 .monday i {
+  font-size: 28px;
+}
+.container .inputBlock .card-4 .row {
+  font-weight: 600;
+  width: 100%;
+  margin-top: 20px;
+  gap: 38px;
+  color: #11A8AB;
+  display: flex;
+  cursor: pointer;
+}
+.container .inputBlock .card-4 .row-1 {
+  cursor: pointer;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 13px;
+  gap: 38px;
+  align-items: center;
+  color: #000;
+  text-align: right;
+  display: flex;
+  cursor: pointer;
+  font-weight: 600;
+}
+.container .inputBlock .card-4 .row-1 a {
+  width: 14%;
+  color: red;
+}
+.container .inputBlock .card-4 .row-1 a:hover {
+  color: white;
+}
+.container .inputBlock .card-4 .row-1 span {
+  width: 14%;
+  color: white;
+}
+.container .inputBlock .card-4 .row-1 span:hover {
+  color: #c3c5d6;
+}
+.container .inputBlock .card-4 .row-1 p {
+  width: 14%;
+}
+.container .inputBlock .card-4 .row-1 p:hover {
+  color: #fff;
+}
+.container .inputBlock .card-4 .row-2 {
+  width: 100%;
+  margin-top: 14px;
+  gap: 38px;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */
